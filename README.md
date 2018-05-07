@@ -6,16 +6,20 @@
 
 ## Description:
 
-Thank you for using LaunchPix! Developed in 2018 as a skills demonstration platform I hope to reveal to users what code is being executed behind the scenes of a socially and networking-driven sharing platform.  This site was built with a Rails backend, React frontend, Foundation styling, and a focus on TDD with RSpec and Jasmine.
+Thank you for using LaunchPix! Developed in 2018 as a skills demonstration platform I strive to reveal to users what code is being executed behind the scenes of this socially-driven sharing platform.  The site was built with a Rails backend, React frontend, Foundation styling, and a focus on TDD with RSpec and Jasmine.
 
 ## Setup:
 
-To set up on local machine:
-1. Clone repo
-2. Run ```bundle exec install``` then ```npm install```
-3. Run ```rake db:create``` then ```rake db:migrate``` then ```rake db:seed```
-4. Run ```rails s``` in one tab and ```npm start``` in another tab
-5. Visit ```localhost:3000```
+To set up the project on your local machine (Mac):
+1. Clone repo locally ```git clone https://github.com/SimplexDev/LaunchPix.git```
+2. Run ```bundle exec install```
+      then ```npm install```
+3. Run ```rake db:create```
+      then ```rake db:migrate && rake db:rollback && rake db:migrate```
+            then ```rake db:seed```
+4. Run ```rails s``` in one console tab,
+      open another console tab and concurrently run  ```npm start```
+5. Open your browser and visit ```localhost:3000```
 
 For testing:
 1. Run ```rake db:test:prepare``` then ```rspec```
@@ -32,5 +36,5 @@ For testing:
 
 ## Acknowledgments:
 
-Thank you to all my mentors, instructors, and teammates at Launch Academy!
+Thank you to all my mentors, instructors, and teammates at Launch Academy coding bootcamp!
 * [Launch Academy](https://www.launchacademy.com)
